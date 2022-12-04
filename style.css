@@ -92,36 +92,79 @@ nav img{
 .testimonials,
 .facilites,
 .campus,
-.course{
-    width: 80%;
+.course,
+.products{
+    width: 1168px;
     margin: auto;
     text-align: center;
     padding-top: 50px;
-}
-.course p{
-    color: #777;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
 }
 
 .row{
     display: flex;
     margin-top: 5%;
     justify-content: space-between;
+    gap: 2rem;
 }
-.course-col{
-    flex-basis: 31%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
+.product-col{
+    /* flex-basis: 25%; */
+    width: 270px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 10px;
+    box-shadow: 0 0 5px 0px #A7A7A7;
 }
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+.product-photo{
+    width: 238px;
+    height: 213px;
+    background-color: #FFDADA;
+    border-radius: 16px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    position: relative;
 }
+.favorite{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}
+.favorite a{
+    color: #D00000;
+    font-size: 20px;
+    text-decoration: none;
+}
+.product-photo img{
+    position: absolute;
+    width: 156px;
+    height: 129px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.star{
+    color: #E3C600;
+    font-size: 16px;
+}
+
+.price{
+    color: #336CFF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart_btn{
+    /* width: 220px; */
+    padding: 10px;
+    background-color: #336CFF;
+    border-radius: 12px;
+    margin: 10px auto;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 
 /* campus */
 .campus-col{
@@ -244,6 +287,48 @@ nav img{
 
 
 
+
+.common{
+    width: 1168px;
+    margin: 20px auto;
+
+}
+.product_header{
+    background-color: #FFD6D6;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #7C7676;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.header_arrow{
+   
+    padding: 6px 12px;
+    background-color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #BCBCBC;
+}
+
+.header_arrow .one{
+    color: #ABA9A9;
+}
+
+.header_arrow .one{
+    color: #33363F;
+}
+.products{
+    display: flex;
+}
+.product_item{
+    height: 463px;
+    height: 270px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0px #A7A7A7;
+}
 
 
 
