@@ -6,6 +6,139 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.banner,
+.nav-wrapper,
+.newsletter,
+.testimonials,
+.header,
+.products{
+    width: 1168px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 10px;
+    background-color: #336CFF;
+    border-radius: 12px;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* header section start */
+header{
+    background-color: #336CFF;
+    width: 100%;
+    padding: 35px 0;
+}
+
+.filter-section{
+    width: 468px;
+    padding-left: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.filter-section .pipe{
+    color: #9EA2A5;
+}
+.form-input,
+.input-select{
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    
+}
+
+.form-input{
+    color: #B5B7B7;
+   
+}
+.search-button{
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+.header ul li{
+    float: left;
+    list-style: none;
+}
+.header-col3 ul li a{
+    padding: 0 20px;
+    color: #FFFDFD;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* header section end */
+/* nav section start */
+nav{
+    background-color: #FFD6D6;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.nav-col ul li{
+    float: left;
+    padding: 32px 42px;
+    list-style: none;
+}
+.nav-col ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+/* nav section end */
+
+/* banner section start */
+
+.banner{
+    padding: 50px 0 25px 0;
+}
+.banner-col1{
+    flex-basis: 70%;
+}
+
+.banner-col2{
+    flex-basis: 30%;
+    align-self: center
+}
+.banner-photo img{
+    width: 100%;
+    border-radius: 20px;
+}
+.banner-content{
+    background-color: #FFEEEE;
+    width: 441px;
+    padding: 55px 55px 35px 55px;
+    border-radius: 12px;
+}
+.banner-content h3{
+    color: #336CFF;
+    font-size: 20px;
+}
+.banner-content p{
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+.shop-btn{
+    width: 175px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+/* banner section end */
 .common{
     width: 1168px;
     margin: 20px auto;
@@ -39,20 +172,6 @@
 }
 
 
-.testimonials,
-.products{
-    width: 1168px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.row{
-    display: flex;
-    /* margin-top: 20px; */
-    justify-content: space-between;
-    gap: 2rem;
-}
 .product-col{
     /* flex-basis: 25%; */
     width: 270px;
@@ -66,6 +185,8 @@
 
 .products{
     display: flex;
+    padding-top: 50px;
+    text-align: center;
 }
 .product_item{
     height: 463px;
@@ -112,16 +233,9 @@
     font-weight: bold;
 }
 
+
 .cart_btn{
-    /* width: 220px; */
-    padding: 10px;
-    background-color: #336CFF;
-    border-radius: 12px;
-    margin: 10px auto;
     display: block;
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
 }
 
 
@@ -162,7 +276,7 @@
 /* ads section end */
 
 /* newsletter section start */
-.newsletter{
+.newsletter-section{
     background-color: #FFD6D6;
     width: 100%;
 }
@@ -207,7 +321,6 @@
 .social_link{
     display: flex;
     gap: 2rem;
-    justify-content: center;
     padding-bottom: 35px;
 }
 .social_item{
@@ -228,97 +341,8 @@
     color: #6D6C6C;
 }
 
-/* footer section start */
 
-/* campus */
-.campus-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.campus-col img{
-    width: 100%;
-    display: block;
-}
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-.layer:hover{
-    background: rgba(226,0,0,0.7);
-}
-.layer h3{
-    position: absolute;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-}
-
-
-
-.facilities-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.facilities-col img{
-    width: 100%;
-    border-radius: 10px;
-}
-.facilities-col p{
-    padding: 0;
-}
-.facilities-col h3{
-    margin: 16px 0;
-    text-align: left;
-}
-
-/* testimonials */
-.testimonials-col{
-    flex-basis: 44%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: center;
-    background: #fff3f3;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
-}
-
-.testimonials-col img{
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
-    border-radius: 50%;
-}
-
-.testimonials-col p{
-    padding: 0;
-    text-align: left;
-}
-.testimonials-col h3{
-    margin-top: 15px;
-    text-align: left;
-}
-
+/* footer section end */
 
 
 
