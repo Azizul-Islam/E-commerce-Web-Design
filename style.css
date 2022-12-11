@@ -20,6 +20,10 @@
 .newsletter,
 .testimonials,
 .header,
+.product-section,
+.brand-section,
+.ads-section,
+.footer-wrapper,
 .products{
     width: 1168px;
     margin: 0 auto;
@@ -55,8 +59,10 @@ header{
 .input-select{
     padding: 15px 0;
     border: none;
-    font-size: 16px;
-    
+    font-size: 16px;   
+}
+.form-input{
+    color: #B5B7B7;
 }
 
 .form-input{
@@ -72,12 +78,15 @@ header{
     float: left;
     list-style: none;
 }
-
+.header-col3{
+    padding-top: 16px;
+}
 .header-col3 ul li a{
     padding: 0 20px;
     color: #FFFDFD;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 400;
 }
 .header-col3 ul li a i{
     padding-right: 8px;
@@ -86,9 +95,23 @@ header{
     color: #FF0000;
     font-size: 20px;
 }
+.main-cart{
+    position: relative;
+}
+.main-cart-counter{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #FF0000;
+    line-height: 16px;
+    top: -7px;
+    left: 30px;
+    font-size: 9px;
+}
 
 /* header section end */
-
 
 
 
@@ -103,20 +126,27 @@ nav{
 }
 .nav-col ul li{
     float: left;
-    padding: 32px 35px;
+    padding: 32px 46px;
     list-style: none;
+}
+.nav-col ul li:first-child{
+    padding: 32px 46px 32px 0px;
+}
+.nav-col ul li:last-child{
+    padding: 32px 0px 32px 46px;
 }
 .nav-col ul li a{
     text-decoration: none;
     font-size: 18px;
     color: #000000;
+    font-weight: 400;
 }
 /* nav section end */
 
 /* banner section start */
 
 .banner{
-    padding: 50px 0 25px 0;
+    padding: 50px 0;
 }
 .banner-col1{
     flex-basis: 70%;
@@ -128,23 +158,27 @@ nav{
 }
 .banner-photo img{
     width: 100%;
+    height: 395px;
     border-radius: 20px;
 }
 .banner-content{
     background-color: #FFEEEE;
     width: 441px;
-    padding: 55px 55px 35px 55px;
+    padding: 52px 55px 42px 55px;
     border-radius: 31px;
 }
 .banner-content h4{
     color: #336CFF;
     font-size: 19px;
+    font-size: 700;
 }
 .banner-content p{
     color: #000000;
     font-size: 18px;
     text-align: center;
     padding: 20px 0 40px 0;
+    font-weight: 400;
+    line-height: 1.5;
 }
 .shop-btn{
     width: 175px;
@@ -154,36 +188,43 @@ nav{
     text-align: center;
 }
 /* banner section end */
-.common{
-    width: 1168px;
-    margin: 20px auto;
-}
+
 .product_header{
     background-color: #FFD6D6;
-    padding: 20px 30px;
+    padding: 25px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #7C7676;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
-
+.product_header h2{
+    font-size: 24px;
+}
 
 .header_arrow{
-   
-    padding: 6px 12px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    line-height: 40px;
     background-color: #fff;
-    margin-right: 10px;
     cursor: pointer;
+    font-size: 20px;
+}
+.header_arrow:first-child{
+    margin-right: 20px;
+}
+
+.product_header .one{
+    color: #ABA9A9;
     border: 1px solid #BCBCBC;
 }
 
-.header_arrow .one{
-    color: #ABA9A9;
-}
 
-.header_arrow .one{
+.product_header .two{
     color: #33363F;
+    border: 1px solid #BCBCBC;
 }
 
 
@@ -199,8 +240,7 @@ nav{
 
 
 .products{
-    display: flex;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 .product_item{
@@ -221,10 +261,10 @@ nav{
 }
 .favorite{
     position: absolute;
-    right: 12px;
-    top: 8px;
+    right: 10px;
+    top: 10px;
 }
-.favorite a{
+.favorite a i{
     color: #D00000;
     font-size: 20px;
     text-decoration: none;
@@ -237,41 +277,53 @@ nav{
     left: 50%;
     transform: translate(-50%,-50%)
 }
+.product-content .title{
+    font-size: 16px;
+    font-weight: 400;
+}
 .star{
     color: #E3C600;
     font-size: 16px;
+    padding: 15px 0;
 }
 
 .price{
     color: #336CFF;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 
 
 .cart_btn{
     display: block;
+    padding: 20px 30px;
+    font-size: 16px;
+}
+.cart_btn i{
+    padding-right: 10px;
 }
 
 
 /* brand section start */
 .brand{
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin: 120px 0;
 }
 .brand-col{
-    
     width: 100%;
     border: 1px solid #7C7676;
     display: flex;
     justify-content: space-between;
+    padding: 60px 35px;
 }
 .brand_logo{
-    flex-basis: 17%;
-    padding: 38px 30px;
+    flex-basis: 15%;
+    width: 80px;
+    height: 80px;
 }
 .brand_logo img{
     width: 100%;
+    height: 100%;
 }
 /* brand section end */
 
@@ -280,13 +332,16 @@ nav{
 .ads-col{
     width: 100%;
     display: flex;
+    margin-bottom: 120px;
 }
 .ads-item{
     flex-basis: 33%;
+    
 }
 .ads-item img{
     width: 100%;
     height: 220px;
+    border: 1px solid #7C7676;
 }
 /* ads section end */
 
@@ -296,17 +351,28 @@ nav{
     width: 100%;
 }
 .newsletter-col{
-    padding: 35px 0 20px 0;
+    padding: 27px 0;
     display: flex;
     gap: 2rem;
 }
 .newsletter-item p{
     font-size: 18px;
+    color: #000000;
+    padding-top: 10px;
 }
 .newsletter-item input{
-    padding: 15px 20px;
+    padding: 17px 20px;
     width: 525px;
     border: none;
+    font-size: 14px;
+    color: #A89F9F;
+    float: left;
+}
+.newsletter-item button{
+    float: left;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 /* news letter section end */
@@ -314,10 +380,10 @@ nav{
 .footer{
     width: 100%;
     background-color: #031228;
-    padding: 37px 0;
+    padding: 37px 0 40px 0;
     color: #fff;
 }
-.footer h4{
+.footer-col p{
     font-size: 18px;
     padding-bottom: 20px;
 }
